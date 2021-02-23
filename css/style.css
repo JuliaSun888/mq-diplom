@@ -89,9 +89,9 @@ body {
 }
 
 .title-trends {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text-title-trends {
@@ -121,24 +121,25 @@ justify-content: center;
 }
 
 .images-trends {
-display: flex;
-flex-wrap: no-wrap;
+  display: flex;
+  flex-wrap: no-wrap;
 }
 
 .picture-trend {
-width: 100%;
-height: auto;
-object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  outline-offset: -30px;
+  outline: 3px solid #b59f5b;
 }
 
 .trend {
-width: 25%;
-
+  width: 25%;
 }
 
-
-
-
+.trend:nth-child(n + 2) {
+  margin-left: 5px;
+}
 
 a {
   text-transform: uppercase;
@@ -418,6 +419,117 @@ address {
 sup {
   color: #b59f5b;
   font-size: 12px;
+}
+
+/*Наши изделия*/
+.handmade {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 64px;
+}
+
+.title-handmade {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-title-handmade {
+  text-transform: uppercase;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-title-handmade::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 65px;
+  background-color: #b59f5b;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.images-handmade {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 100%;
+}
+
+.product-handmade {
+  width: 33.3%;
+}
+
+.picture-product {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.product-badge {
+  font-size: 15px;
+}
+
+/*Рамка товара*/
+.product-box {
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 2px solid #b59f5b;
+  margin-top: -45px;
+}
+
+.price-magazin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-price-old {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.product-price-new {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-button {
+  background: #b59f5b;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0%;
+}
+
+.product-box a {
+  color: #b59f5b;
+  text-transform: none;
 }
 
 /*Футер*/
