@@ -496,6 +496,11 @@ sup {
   margin-top: -45px;
 }
 
+.content-box {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .price-magazin {
   display: flex;
   flex-direction: row;
@@ -530,6 +535,11 @@ sup {
 .product-box a {
   color: #b59f5b;
   text-transform: none;
+}
+
+.product-name a {
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /*Футер*/
