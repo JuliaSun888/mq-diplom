@@ -37,7 +37,8 @@ body {
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .welcome-title {
@@ -119,6 +120,7 @@ body {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 28px;
+  margin-left: 55px;
 }
 
 .images-trends {
@@ -216,7 +218,8 @@ a {
 .themes {
   display: flex;
   box-sizing: border-box;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   margin-bottom: 60px;
 }
 
@@ -517,6 +520,7 @@ sup {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 30px;
+  margin-left: 55px;
 }
 
 .images-handmade {
@@ -544,25 +548,25 @@ sup {
 .content-box {
   margin-left: 20px;
   margin-right: 20px;
-  
+  position: relative;
 }
 
 .picture-product {
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  position: absolute;
   
 }
 
 .product-box {
   width: 345px;
   display: flex;
- position: absolute;
+  position: absolute;
   flex-grow: 1;
   border: 2px solid #b59f5b;
   margin-top: -30px;
   padding-top: 55px;
-  z-index: 2;
+  min-height: 265px;
 }
 
 
