@@ -130,26 +130,22 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  /*outline: 3px solid rgba(181, 159, 91, 0.6);*/
- /* border: 1px solid rgba(239, 246, 241, .60);*/
-   
 }
 
 .trend {
   width: 25%;
   position: relative;
-  z-index: 0;
+ 
 }
 
-.trend::after {
+.trend::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,.5 );
-  z-index: 1;
+  background-color: rgba(0,0,0,.6 );
 }
 
 .trend:nth-child(n + 2) {
@@ -554,17 +550,19 @@ sup {
 .picture-product {
   display: flex;
   flex-direction: column;
+  z-index: 1;
   
 }
 
 .product-box {
   width: 345px;
   display: flex;
-  position: absolute;
+ position: absolute;
   flex-grow: 1;
   border: 2px solid #b59f5b;
   margin-top: -30px;
   padding-top: 55px;
+  z-index: 2;
 }
 
 
