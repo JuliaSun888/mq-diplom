@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  /*background-image: url(../images/banner-bg.jpg);*/
+  background-image: url(../images/banner-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -144,6 +144,7 @@ body {
 
 .trend {
   width: 25%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -162,6 +163,7 @@ body {
 }
 
 .border-trend {
+  
   position: absolute;
   content: "";
   top: auto;
@@ -596,6 +598,7 @@ sup {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .product-price-old {
@@ -734,52 +737,60 @@ sup {
 }
 }
 
-@media(min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-  
+@media(min-width: 641px), (max-width: 1199px) and (orientation: landscape) {
 .trend {
   width: 25%;
 }
 }
 
-@media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-
+@media(min-width: 641px), (max-width: 1199px) and (orientation: portrait) {
   .trend {
     width: 50%;
   }
   }
 
+
+/*Бургер-меню*/
 @media(max-width: 1199px) {
   .menu {
     display: none;
+  }
+
+  .menu-button {
+    width: 2.3rem;
+    padding-top: 2rem;
+    border: none;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: transparent;
+    right: 35px;
 }
 
-.burger {
-  position: relative; 
-  width: 24px; 
-  height: 20px;
-  display: block;
-  top: 50px;
-  right: 35px;
-
-}
-
-.burger, .burger:after, .burger:before {
-  height: 3px;
-  width: 24px;
+.menu-button:before, .menu-button:after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: #ffffff;
   position: absolute;
-  background: #fff;
-  margin: 0 auto;
+  left: 0;
 }
-.burger span{
-  top: 21px;
+.menu-button-label {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
-.burger:after, .burger:before{
-  content: '';
 }
-.burge:after{
-  bottom: 7px;
-}
-.burger:before{
-  top: 7px;
-}
+
+
+@media(max-width: 360px) {
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+  }
 }
