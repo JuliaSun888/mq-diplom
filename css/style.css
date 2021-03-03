@@ -95,6 +95,10 @@ body {
 
 .trends {
   margin-top: 63px;
+  width: 100%;
+  max-width: 1660px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-trends {
@@ -134,11 +138,14 @@ body {
 .images-trends {
   display: flex;
   flex-wrap: no-wrap;
+
+  
+ 
 }
 
 .picture-trend {
   width: 100%;
-  width: 408px;
+  max-width: 408px;
   height: auto;
   object-fit: cover;
 }
@@ -147,6 +154,12 @@ body {
   width: 25%;
   margin: 0 auto;
   position: relative;
+  
+}
+
+
+.images-trends {
+  margin-right: 0;
 }
 
 .trend::before {
@@ -158,7 +171,7 @@ body {
   right: 0;
   background-color: rgba(0,0,0,.6 );
   width: 100%;
-  max-width: 408px;
+  width: 408px;
 }
 
 .trend:nth-child(n + 2) {
