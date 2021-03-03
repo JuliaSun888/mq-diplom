@@ -95,9 +95,7 @@ body {
 
 .trends {
   margin-top: 63px;
-  /*width: 100%;
-  max-width: 1660px;
-  margin-left: auto;*/
+  display: block;
  
 }
 
@@ -144,7 +142,6 @@ body {
 .picture-trend {
   display: block;
   width: 100%;
-  /*max-width: 408px;*/
   height: auto;
   object-fit: cover;
 }
@@ -315,6 +312,10 @@ address {
   padding-bottom: 64px;
 }
 
+.news {
+  display: block;
+}
+
 /*Правая колонка*/
 
 /*Новые посты*/
@@ -325,6 +326,7 @@ address {
 }
 
 .last-posts {
+  display: block;
   width: 23%;
   max-width: 270px;
   margin-left: 120px;
@@ -578,6 +580,10 @@ sup {
   padding-left: 22px;
   padding-right: 22px;
   max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  }
 }
 
 .product-badge {
@@ -751,18 +757,36 @@ sup {
   display: flex;
   flex-wrap: wrap;
 }
+.trend {
+  width: calc(50% - 10px);
 }
 
-@media(min-width: 641px), (max-width: 1199px) and (orientation: landscape) {
-.trend {
-  width: 25%;
+.images-handmade {
+  display: flex;
+  flex-wrap: wrap;
 }
+.product-handmade {
+  width: calc(50% - 10px);
 }
+
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+
+
+}
+
+
 
 @media(min-width: 641px), (max-width: 1199px) and (orientation: portrait) {
-  .trend {
-    width: 50%;
-  }
+  
   }
 
 
