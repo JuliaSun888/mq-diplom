@@ -562,7 +562,6 @@ sup {
 .product-handmade {
   width: 33%;
   max-width: 340px;
-
 }
 
 .product-handmade:nth-child(2) {
@@ -753,6 +752,11 @@ sup {
 .header {
   background-image: url(../images/banner-bg-tablet.jpg);
 }
+
+.trend:nth-child(n + 3) {
+  margin-top: 3px;
+}
+
 .images-trends {
   display: flex;
   flex-wrap: wrap;
@@ -778,9 +782,6 @@ sup {
   width: 100%;
   max-width: 700px;
 }
-
-
-
 }
 
 
