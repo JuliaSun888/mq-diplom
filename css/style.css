@@ -95,10 +95,10 @@ body {
 
 .trends {
   margin-top: 63px;
-  width: 100%;
+  /*width: 100%;
   max-width: 1660px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto;*/
+ 
 }
 
 .title-trends {
@@ -138,12 +138,11 @@ body {
 .images-trends {
   display: flex;
   flex-wrap: no-wrap;
-
-  
  
 }
 
 .picture-trend {
+  display: block;
   width: 100%;
   max-width: 408px;
   height: auto;
@@ -151,10 +150,10 @@ body {
 }
 
 .trend {
-  width: 25%;
+  width: 100%;
+  max-width: 410px;
   margin: 0 auto;
   position: relative;
-  
 }
 
 
@@ -171,7 +170,7 @@ body {
   right: 0;
   background-color: rgba(0,0,0,.6 );
   width: 100%;
-  width: 408px;
+  max-width: 408px;
 }
 
 .trend:nth-child(n + 2) {
@@ -179,8 +178,8 @@ body {
 }
 
 .border-trend {
-  width: 100%;
-  max-width: 365px;
+  /*width: 100%;
+  max-width: 365px;*/
   position: absolute;
   content: "";
   top: auto;
