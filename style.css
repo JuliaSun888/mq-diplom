@@ -138,7 +138,7 @@ body {
 
 .picture-trend {
   width: 100%;
-  max-width: 408px;
+  width: 408px;
   height: auto;
   object-fit: cover;
 }

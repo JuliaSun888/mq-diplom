@@ -137,7 +137,8 @@ body {
 }
 
 .picture-trend {
-  max-width: 100%;
+  width: 100%;
+  width: 408px;
   height: auto;
   object-fit: cover;
 }
@@ -156,6 +157,8 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0,0,0,.6 );
+  width: 100%;
+  max-width: 408px;
 }
 
 .trend:nth-child(n + 2) {
@@ -163,7 +166,8 @@ body {
 }
 
 .border-trend {
-  
+  width: 100%;
+  max-width: 365px;
   position: absolute;
   content: "";
   top: auto;
