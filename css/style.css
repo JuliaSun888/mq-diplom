@@ -561,13 +561,13 @@ sup {
 
 .product-handmade {
   width: 33%;
-  max-width: 340px;
+/*max-width: 340px;*/
 }
 
-.product-handmade:nth-child(2) {
+/*.product-handmade:nth-child(2) {
   margin-left: 65px;
   margin-right: 65px;
-}
+}*/
 
 .product-handmade:last-child {
   margin: 0;
