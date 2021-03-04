@@ -753,6 +753,11 @@ sup {
   background-image: url(../images/banner-bg-tablet.jpg);
 }
 
+/*.handmade {
+  width: 697px;
+}
+*/
+
 .trend:nth-child(n + 3) {
   margin-top: 3px;
 }
@@ -768,10 +773,29 @@ sup {
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
+}
+
 .product-handmade {
   width: calc(50% - 10px);
 }
+
+.product-handmade:last-child {
+  margin-top: 30px;
+}
+
+.product-handmade:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.product-box {
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 
 .container {
