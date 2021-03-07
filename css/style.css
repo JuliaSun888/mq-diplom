@@ -557,10 +557,13 @@ sup {
   display: flex;
   flex-wrap: no-wrap;
   width: 100%;
+  
 }
 
 .product-handmade {
   width: 33%;
+  /*display: inline-block;
+  vertical-align: top;*/
 /*max-width: 340px;*/
 }
 
@@ -593,20 +596,21 @@ sup {
 .content-box {
   margin-left: 20px;
   margin-right: 20px;
+  float: left;
   
 }
 
 .picture-product {
   display: flex;
   flex-direction: column;
-  
-  
 }
 
 .product-box {
+  overflow: hidden;
   width: 345px;
   display: flex;
   position: relative;
+  align-items: flex-start;
   z-index: 1;
   flex-grow: 1;
   border: 2px solid #b59f5b;
@@ -643,12 +647,12 @@ sup {
   align-items: center;
   border: 0;
   padding: 20px 30px;
-  
   border-radius: 0%;
   width: 100%;
   max-width: 140px;
   height: 100%;
   max-height: 50px;
+  cursor: pointer;
 }
 
 .product-box a {
@@ -768,6 +772,8 @@ sup {
 }
 .trend {
   width: calc(50% - 10px);
+  min-height: 260px;
+  overflow: hidden;
 }
 
 .images-handmade {
@@ -798,13 +804,13 @@ sup {
 
 
 
-.container {
+/*.container {
   display: flex;
   flex-wrap: nowrap;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 700px;
+  max-width: 700px;*/
 }
 }
 
@@ -824,6 +830,7 @@ sup {
   .menu-button {
     width: 2.3rem;
     padding-top: 2rem;
+    height: 20%;
     border: none;
     position: relative;
     text-indent: -9999px;
@@ -832,24 +839,38 @@ sup {
     right: 35px;
 }
 
-.menu-button:before, .menu-button:after {
-  content: "";
-  width: 100%;
-  height: 20%;
-  border-radius: 5px;
-  background-color: #ffffff;
-  position: absolute;
-  left: 0;
+.menu-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    top: 0;
 }
+
+.menu-button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    top: 70%;
+}
+
 .menu-button-label {
   width: 100%;
-  height: 20%;
+  height: 15%;
   margin-top: -0.1em;
   border-radius: 5px;
   background-color: #ffffff;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
+  border-radius: 0;
 }
 }
 
