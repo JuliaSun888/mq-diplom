@@ -251,8 +251,7 @@ a {
 
 .picture {
   margin-right: 30px;
-  width: 360px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .tegs-link {
@@ -582,7 +581,7 @@ sup {
   height: auto;
   object-fit: cover;
   }
-}
+
 
 .product-badge {
   font-size: 0.94rem;
@@ -785,15 +784,6 @@ sup {
   margin-left: auto;
 }
 
-.news {
-  display: block;
-  width: 395px;
-}
-
-.last-posts {
-  width: 270px;
-}
-
 .container {
   display: flex;
   flex-wrap: nowrap;
@@ -802,6 +792,19 @@ sup {
   width: 100%;
   max-width: 700px;
 }
+
+.news {
+  width: 56%;
+  max-width: 395px;
+  margin-left: 35px;
+}
+
+.last-posts {
+  width: 39%;
+  max-width: 270px;
+  
+}
+
 }
 
 
