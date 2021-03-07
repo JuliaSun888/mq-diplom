@@ -312,10 +312,6 @@ address {
   padding-bottom: 64px;
 }
 
-.news {
-  display: block;
-}
-
 /*Правая колонка*/
 
 /*Новые посты*/
@@ -562,18 +558,18 @@ sup {
 
 .product-handmade {
   width: 33%;
+
   /*display: inline-block;
   vertical-align: top;*/
 /*max-width: 340px;*/
 }
 
-/*.product-handmade:nth-child(2) {
+.product-handmade:nth-child(n+2) {
   margin-left: 65px;
-  margin-right: 65px;
-}*/
+}
 
 .product-handmade:last-child {
-  margin: 0;
+  margin-top: 0;
 }
 
 .picture-product {
@@ -757,15 +753,9 @@ sup {
   background-image: url(../images/banner-bg-tablet.jpg);
 }
 
-/*.handmade {
-  width: 697px;
-}
-*/
-
 .trend:nth-child(n + 3) {
   margin-top: 3px;
 }
-
 .images-trends {
   display: flex;
   flex-wrap: wrap;
@@ -775,42 +765,42 @@ sup {
   min-height: 260px;
   overflow: hidden;
 }
-
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
 }
-}
-
 .product-handmade {
   width: calc(50% - 10px);
 }
-
 .product-handmade:last-child {
   margin-top: 30px;
 }
-
 .product-handmade:nth-child(odd) {
   margin-right: 20px;
 }
-
 .product-box {
-
   margin-right: auto;
   margin-left: auto;
 }
 
+.news {
+  display: block;
+  width: 395px;
+}
 
+.last-posts {
+  width: 270px;
+}
 
-/*.container {
+.container {
   display: flex;
   flex-wrap: nowrap;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 700px;*/
+  max-width: 700px;
 }
 }
 
