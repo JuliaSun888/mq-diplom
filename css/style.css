@@ -252,6 +252,8 @@ a {
 .picture {
   margin-right: 30px;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .tegs-link {
@@ -767,11 +769,13 @@ sup {
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  
 }
 .product-handmade {
-  width: calc(50% - 10px);
+  margin-right: auto;
+  margin-left: auto;
+
+  width: calc(33% - 10px);
 }
 .product-handmade:last-child {
   margin-top: 30px;
