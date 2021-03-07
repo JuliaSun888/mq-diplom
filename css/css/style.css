@@ -1,8 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
 }
+
 
 body {
   font-family: OpenSans, Arial, sans-serif;
@@ -32,12 +32,19 @@ body {
   z-index: -1;
 }
 
+.banner {
+  width: 100%;
+  min-width: 1170px;
+  
+}
+
 .welcome {
   display: flex;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  width: 700px;
+  width: 60%;
+  max-width: 700px;
 }
 
 .welcome-title {
@@ -47,12 +54,13 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-family: OpenSans, Arial, sans-serif;
-  font-size: 45px;
+  font-size: 2,8rem;
   line-height: 75px;
 }
 
 .header-logo {
   height: 40px;
+  max-width: 100%;
 }
 
 .logo {
@@ -80,13 +88,15 @@ body {
 .menu-link {
   text-decoration: none;
   color: #fff;
-  font-size: 13px;
+  font-size: 0.92rem;
 }
 
 /*Новый блок Сейчас в тренде*/
 
 .trends {
   margin-top: 63px;
+  display: block;
+ 
 }
 
 .title-trends {
@@ -119,37 +129,45 @@ body {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 28px;
+  margin-left: 55px;
+  
 }
 
 .images-trends {
   display: flex;
   flex-wrap: no-wrap;
+ 
 }
 
 .picture-trend {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
-  /*outline: 3px solid rgba(181, 159, 91, 0.6);*/
- /* border: 1px solid rgba(239, 246, 241, .60);*/
-   
 }
 
 .trend {
-  width: 25%;
+  width: 100%;
+  /*max-width: 410px;*/
+  margin: 0 auto;
   position: relative;
-  z-index: 0;
 }
 
-.trend::after {
+
+.images-trends {
+  margin-right: 0;
+}
+
+.trend::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,.5 );
-  z-index: 1;
+  background-color: rgba(0,0,0,.6 );
+  width: 100%;
+  /*max-width: 408px;*/
 }
 
 .trend:nth-child(n + 2) {
@@ -157,13 +175,15 @@ body {
 }
 
 .border-trend {
+  /*width: 100%;
+  max-width: 365px;*/
   position: absolute;
   content: "";
   top: auto;
   bottom: 18px;
   text-decoration: none;
   color:#fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   border: 2px solid #b59f5b;
   left: 20px;
@@ -171,7 +191,7 @@ body {
 }
 
 .title-trend {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 
@@ -194,7 +214,7 @@ body {
   }
 
   .trend-teg-link {
-      font-size: 14px;
+      font-size: 0.87rem;
       font-weight: bold;
       text-decoration: none;
       color: #b59f5b;
@@ -220,7 +240,8 @@ a {
 .themes {
   display: flex;
   box-sizing: border-box;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   margin-bottom: 60px;
 }
 
@@ -231,10 +252,11 @@ a {
 .picture {
   margin-right: 30px;
   width: 360px;
+  max-width: 100%;
 }
 
 .tegs-link {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: bold;
   text-decoration: none;
   color: #b59f5b;
@@ -246,14 +268,14 @@ a {
 
 .card-name a {
   color: #000000;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   text-align: justify;
   font-weight: bold;
 }
 
 .card-data {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #888888;
   word-spacing: 2px;
   margin-right: 15px;
@@ -267,14 +289,14 @@ a {
 }
 
 address {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
   font-weight: bold;
   font-style: normal;
 }
 
 .card-content {
-  font-size: 15px;
+  font-size: 0.94rem;
   line-height: 22px;
 }
 
@@ -300,14 +322,16 @@ address {
 }
 
 .last-posts {
-  width: 270px;
+  display: block;
+  width: 23%;
+  max-width: 270px;
   margin-left: 120px;
 }
 
 /*Оранжевая линия*/
 .post-title {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -328,7 +352,7 @@ address {
 
 .post-name a {
   color: #000000;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 18px;
   font-weight: bold;
 }
@@ -340,6 +364,7 @@ address {
 .picture-post {
   width: 65px;
   height: 65px;
+  max-width: 100%;
   margin-right: 20px;
 }
 
@@ -383,7 +408,7 @@ address {
 .form-hint {
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
   position: absolute;
-  font-size: 13px;
+  font-size: 0.81rem;
   color: #888888;
   width: 1px;
   height: 1px;
@@ -392,7 +417,7 @@ address {
 
 .search-hint {
   position: absolute;
-  font-size: 13px;
+  font-size: 0.81rem;
   color: #888888;
   width: 1px;
   height: 1px;
@@ -401,7 +426,7 @@ address {
 
 .form-mail {
   position: absolute;
-  font-size: 13px;
+  font-size: 0.81rem;
   color: #888888;
   width: 1px;
   height: 1px;
@@ -422,7 +447,7 @@ address {
   height: 48px;
   background-color: #b59f5b;
   border: 0;
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #ffffff;
   font-weight: bold;
   margin-top: 18px;
@@ -445,7 +470,7 @@ address {
 .nav-link {
   text-decoration: none;
   color: #000000;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   border: 2px solid #f4f3f1;
   padding: 7px 15px;
@@ -466,7 +491,7 @@ address {
 .other-link {
   text-transform: none;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: bold;
   color: #000000;
 }
@@ -477,7 +502,7 @@ address {
 
 sup {
   color: #b59f5b;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /*Наши изделия*/
@@ -500,7 +525,7 @@ sup {
 .text-title-handmade {
   text-transform: uppercase;
   font-family: OpenSans, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -521,16 +546,30 @@ sup {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 30px;
+  margin-left: 55px;
 }
 
 .images-handmade {
   display: flex;
   flex-wrap: no-wrap;
   width: 100%;
+  
 }
 
 .product-handmade {
-  width: 33.3%;
+  width: 33%;
+
+  /*display: inline-block;
+  vertical-align: top;*/
+/*max-width: 340px;*/
+}
+
+.product-handmade:nth-child(n+2) {
+  margin-left: 65px;
+}
+
+.product-handmade:last-child {
+  margin-top: 0;
 }
 
 .picture-product {
@@ -538,66 +577,78 @@ sup {
   margin-left: auto;
   padding-left: 22px;
   padding-right: 22px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  }
 }
 
 .product-badge {
-  font-size: 15px;
+  font-size: 0.94rem;
 }
 
 /*Рамка товара*/
 .content-box {
   margin-left: 20px;
   margin-right: 20px;
+  float: left;
   
 }
 
 .picture-product {
   display: flex;
   flex-direction: column;
-  
 }
 
 .product-box {
+  overflow: hidden;
   width: 345px;
   display: flex;
-  position: absolute;
+  position: relative;
+  align-items: flex-start;
+  z-index: 1;
   flex-grow: 1;
   border: 2px solid #b59f5b;
   margin-top: -30px;
   padding-top: 55px;
+  min-height: 265px;
 }
-
-
 
 .price-magazin {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .product-price-old {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: bold;
   text-decoration: line-through;
 }
 
 .product-price-new {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
 .product-button {
   background: #b59f5b;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 30px;
   border-radius: 0%;
+  width: 100%;
+  max-width: 140px;
+  height: 100%;
+  max-height: 50px;
+  cursor: pointer;
 }
 
 .product-box a {
@@ -675,7 +726,7 @@ sup {
 }
 
 .text-footer {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #999999;
   text-align: center;
   padding-top: 73px;
@@ -692,4 +743,130 @@ sup {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans-Regular.woff);
   font-weight: normal;
+}
+
+/*Медиазaпросы*/
+
+/*Планшеты*/
+@media(min-width: 641px) and (max-width: 1199px) {
+.header {
+  background-image: url(../images/banner-bg-tablet.jpg);
+}
+
+.trend:nth-child(n + 3) {
+  margin-top: 3px;
+}
+.images-trends {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trend {
+  width: calc(50% - 10px);
+  min-height: 260px;
+  overflow: hidden;
+}
+.images-handmade {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-handmade {
+  width: calc(50% - 10px);
+}
+.product-handmade:last-child {
+  margin-top: 30px;
+}
+.product-handmade:nth-child(odd) {
+  margin-right: 20px;
+}
+.product-box {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.news {
+  display: block;
+  width: 395px;
+}
+
+.last-posts {
+  width: 270px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 700px;
+}
+}
+
+
+
+@media(min-width: 641px), (max-width: 1199px) and (orientation: portrait) {
+  
+  }
+
+
+/*Бургер-меню*/
+@media(max-width: 1199px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    width: 2.3rem;
+    padding-top: 2rem;
+    height: 20%;
+    border: none;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: transparent;
+    right: 35px;
+}
+
+.menu-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.menu-button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    top: 70%;
+}
+
+.menu-button-label {
+  width: 100%;
+  height: 15%;
+  margin-top: -0.1em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  border-radius: 0;
+}
+}
+
+
+@media(max-width: 360px) {
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+  }
 }
