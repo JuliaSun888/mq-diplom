@@ -700,6 +700,10 @@ sup {
   position: absolute;
 }
 
+.menu-button {
+  display: none;
+}
+
 .twitter {
   background-image: url(../svg/004-twitter.svg);
 }
@@ -814,6 +818,11 @@ sup {
 }
 
 /*Наши изделия*/
+.handmade {
+  width: 100%;
+  
+}
+
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
@@ -823,18 +832,19 @@ sup {
 .product-handmade {
   margin-right: auto;
   margin-left: auto;
-  width: calc(33% - 10px);
+  width: calc(50% - 100px);
 }
 .product-handmade:last-child {
   margin-top: 30px;
 }
 .product-handmade:nth-child(odd) {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .product-box {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 
 }
@@ -852,6 +862,7 @@ sup {
   }
 
   .menu-button {
+    display: block;
     width: 2.3rem;
     padding-top: 2rem;
     height: 20%;
