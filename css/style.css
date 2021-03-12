@@ -135,7 +135,7 @@ body {
 
 .images-trends {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
  
 }
 
@@ -148,7 +148,6 @@ body {
 
 .trend {
   width: 100%;
-  /*max-width: 410px;*/
   margin: 0 auto;
   position: relative;
 }
@@ -552,7 +551,7 @@ sup {
 
 .images-handmade {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   width: 100%;
   
 }
@@ -798,11 +797,24 @@ sup {
 
 .themes {
   width: 100%;
-  height: 300px;
+  height: 3px;
   display: flex;
   display: inline-block;
-  
-  }
+}
+
+.themes::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 32%;
+ 
+  background-color: #888888;
+
+  margin-top: 20px;
+  margin-bottom: 45px;
+
+}
 
 .themes:nth-child(n + 2) {
   margin-top: 65px;
@@ -820,20 +832,14 @@ sup {
 /*Наши изделия*/
 .handmade {
   width: 100%;
-  
 }
-
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
 }
-.product-handmade {
-  margin-right: auto;
-  margin-left: auto;
-  width: calc(50% - 100px);
-}
+
 .product-handmade:last-child {
   margin-top: 30px;
 }
@@ -845,15 +851,174 @@ sup {
   margin-left: auto;
 }
 
+}
+
+/*Портретная*/
+@media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+  .trend {
+    width: calc((100% - 5px) / 2);
+  }
+  
+  .trend:nth-child(2n) {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  
+  .trend:nth-child(2n+1) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  }
+
+
+/*Ландшафтная*/
+  @media(min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .trend {
+    width: calc((100% - 5px) / 4);
+    
+  } 
+
+  .images-trends {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .product-handmade {
+    margin-right: auto;
+    margin-left: 90px;
+    width: calc(50% - 90px);
+  }
+
+  .picture-trend {
+    
+    width: 100%;
+    
+  }
+  
+  
+    /*.trend:nth-child(n+2) {
+      margin-left: 5px;
+      
+    }  */  
+    
+  }
+
+  /*Мобильники*/
+  @media(max-width: 360px) and (orientation: portrait) {
+    .header {
+      background-image: url(../images/banner-mobile.jpg);
+    }
+
+  .trend:nth-child(n + 2) {
+    margin-bottom: 3px;
+    margin-left: 0;
+  }
+
+  .tegs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card-info {
+   margin-top: 25px;
+   margin-bottom: 25px;
+ }
+
+  .themes:last-child {
+    margin-bottom: 25px;
+  }
+
+  .last-posts {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+/*Наши изделия*/
+  .handmade {
+    width: 100%;
+    
+  }
+
+  .product-handmade {
+    width: 100%;
+  }
+
+  .images-handmade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+}  
+
+@media(max-width: 360px) and (orientation: portrait) {
+  .trend {
+    width: 100%;
+  }
+
+  .images-trends {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*Основной контент*/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+  }
+  
+  .themes {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .picture {
+    
+  }
+
+  .news {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .last-posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 
 }
+    /*.news {
+      width: 56%;
+      max-width: 395px;
+      margin-left: 35px;
+    }
+    
+    .last-posts {
+      width: 39%;
+      max-width: 270px;
+      
+    }*/
 
+   /* .handmade {
+      width: 100%;
+    }
+    .images-handmade {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
+    }*/
 
-@media(min-width: 641px), (max-width: 1199px) and (orientation: portrait) {
-  
-  }
-
+ 
 
 /*Бургер-меню*/
 @media(max-width: 1199px) {
@@ -907,11 +1072,4 @@ sup {
   top: 40%;
   border-radius: 0;
 }
-}
-
-
-@media(max-width: 360px) {
-  .header {
-    background-image: url(../images/banner-mobile.jpg);
-  }
 }
