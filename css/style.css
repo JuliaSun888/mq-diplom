@@ -347,6 +347,7 @@ address {
   width: 65px;
   background-color: #b59f5b;
   margin-left: 100px;
+  
   margin-top: 15px;
 }
 
@@ -558,10 +559,6 @@ sup {
 
 .product-handmade {
   width: 33%;
-
-  /*display: inline-block;
-  vertical-align: top;*/
-/*max-width: 340px;*/
 }
 
 .product-handmade:nth-child(n+2) {
@@ -771,7 +768,14 @@ sup {
   overflow: hidden;
 }
 
+.picture-trend {
+  width: 100%;
+  height: 100%;
+}
 
+.content-teg {
+  padding: 0;
+}
 
 /*Основной контент*/
 .container {
@@ -789,32 +793,6 @@ sup {
   margin-left: 35px;
 }
 
-.last-posts {
-  width: 39%;
-  max-width: 270px;
-  
-}
-
-.themes {
-  width: 100%;
-  height: 3px;
-  display: flex;
-  display: inline-block;
-}
-
-.themes::after {
-  display: block;
-  content: " ";
-  position: absolute;
-  height: 2px;
-  width: 32%;
- 
-  background-color: #888888;
-
-  margin-top: 20px;
-  margin-bottom: 45px;
-
-}
 
 .themes:nth-child(n + 2) {
   margin-top: 65px;
@@ -829,6 +807,16 @@ sup {
   margin-bottom: 40px;
 }
 
+/*Правая колонка*/
+.last-posts {
+  width: 39%;
+  max-width: 270px;
+}
+
+.new-posts {
+  width: 100%;
+}
+
 /*Наши изделия*/
 .handmade {
   width: 100%;
@@ -836,8 +824,8 @@ sup {
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: space-between;
+ 
 }
 
 .product-handmade:last-child {
@@ -849,6 +837,11 @@ sup {
 .product-box {
   margin-right: auto;
   margin-left: auto;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1170px;
 }
 
 }
@@ -868,6 +861,25 @@ sup {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .themes {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    display: inline-block;
+  }
+  
+  .themes::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: calc(50% - 30px);
+    background-color: #888888;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
   }
 
 
@@ -890,72 +902,43 @@ sup {
   }
 
   .picture-trend {
-    
     width: 100%;
     
   }
   
+  .themes {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    display: inline-block;
+  }
   
-    /*.trend:nth-child(n+2) {
-      margin-left: 5px;
-      
-    }  */  
+  .themes::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background-color: #888888;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
     
   }
 
   /*Мобильники*/
-  @media(max-width: 360px) and (orientation: portrait) {
+  @media(max-width: 640px) {
     .header {
       background-image: url(../images/banner-mobile.jpg);
     }
 
   .trend:nth-child(n + 2) {
-    margin-bottom: 3px;
+    margin-top: 3px;
     margin-left: 0;
   }
 
-  .tegs {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .card-info {
-   margin-top: 25px;
-   margin-bottom: 25px;
- }
-
-  .themes:last-child {
-    margin-bottom: 25px;
-  }
-
-  .last-posts {
-  margin-top: 45px;
-  margin-left: auto;
-  margin-right: auto;
- 
-}
-
-/*Наши изделия*/
-  .handmade {
-    width: 100%;
-    
-  }
-
-  .product-handmade {
-    width: 100%;
-  }
-
-  .images-handmade {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-
-}  
-
-@media(max-width: 360px) and (orientation: portrait) {
-  .trend {
-    width: 100%;
+  .trend:nth-child(2) {
+    margin-top: 0;
   }
 
   .images-trends {
@@ -963,60 +946,105 @@ sup {
     flex-wrap: wrap;
   }
 
+  .new-posts {
+    margin-top: 45px;
+  }
+
+
   /*Основной контент*/
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    
-    width: 100%;
-  }
   
-  .themes {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  .picture {
-    
-  }
-
-  .news {
-    width: 100%;
+  .container {
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
-    
+    width: 100%;
   }
 
-  .last-posts {
+  .tegs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .content-teg {
+    padding: 0;
+  }
+
+  .card-info {
+   margin-top: 25px;
+   margin-bottom: 25px;
+ }
+
+ .themes {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.news {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.last-posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+    margin-right: auto;
+}
+
+  .themes:last-child {
+    margin-bottom: 25px;
+  }
+
+
+/*Наши изделия*/
+  .handmade {
     width: 100%;
+    padding: 0;
+}
+
+  .product-handmade {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-bottom: 30px;
+}
+
+  
+.product-handmade:nth-child(n+2) {
+  margin-left: 0;
+}
+
+  .images-handmade {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+}  
+
+@media(max-width: 640px) and (orientation: portrait) {
+  .trend {
+    width: 100%;
+  }
+
+  .trend:nth-child(n + 2) {
+    margin-top: 3px;
+    margin-left: 15;
+  }
+}
+
+@media(max-width: 640px) and (orientation: landscape) {
+  .trend {
+    width: 50%;
   }
 
 
 }
-    /*.news {
-      width: 56%;
-      max-width: 395px;
-      margin-left: 35px;
-    }
-    
-    .last-posts {
-      width: 39%;
-      max-width: 270px;
-      
-    }*/
-
-   /* .handmade {
-      width: 100%;
-    }
-    .images-handmade {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: auto;
-      margin-left: auto;
-    }*/
 
  
 
