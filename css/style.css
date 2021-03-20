@@ -43,7 +43,7 @@ body {
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 80%;
   max-width: 700px;
 }
 
@@ -65,6 +65,7 @@ body {
 
 .logo {
   display: flex;
+  
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
@@ -589,8 +590,6 @@ sup {
 .content-box {
   margin-left: 20px;
   margin-right: 20px;
-  float: left;
-  
 }
 
 .picture-product {
@@ -847,7 +846,8 @@ sup {
 
 .product-handmade {
   width: calc(50%-30px);
-  margin-left: 30px;
+  
+  margin-right: 25px;
 }
 
 .product-handmade:last-child {
@@ -871,6 +871,7 @@ sup {
 @media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .trend {
     width: calc((100% - 5px) / 2);
+    
   }
   
   .trend:nth-child(2n) {
@@ -878,6 +879,11 @@ sup {
     margin-right: 0;
   }
   
+  .trend:nth-child(n + 2) {
+    margin-top: 3px;
+    margin-left: 15;
+  }
+
   .trend:nth-child(2n+1) {
     margin-left: 0;
     margin-right: 0;
@@ -911,17 +917,29 @@ sup {
 
   /*Мобильники*/
   @media(max-width: 640px) {
-    .header {
-      background-image: url(../images/banner-mobile.jpg);
-    }
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+.header-logo {
+  order: 5;
+  margin-top: 200px;
+  height: 90px;
+  max-width: 100%;
+}
+
+.welcome-title {
+  padding-top: 50px;
+ 
+}
 
   .trend:nth-child(n + 2) {
     margin-top: 3px;
     margin-left: 0;
-  }
-
-  .trend:nth-child(2) {
-    margin-top: 0;
   }
 
   .images-trends {
@@ -941,6 +959,10 @@ sup {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+   
+    
   }
 
   .tegs {
@@ -978,14 +1000,21 @@ sup {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .last-posts {
   width: 100%;
+  max-width: 330px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0;
-    margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.other-themes {
+  width: 100%;
 }
 
 .themes:last-child {
@@ -994,15 +1023,17 @@ sup {
 
 
 /*Наши изделия*/
-  .handmade {
-    width: 100%;
-    padding: 0;
+.handmade {
+  width: 100%;
+  
+  max-width: 330px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .product-handmade {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;   
+     
   margin-bottom: 30px;
 }
 
@@ -1011,10 +1042,23 @@ sup {
   margin-left: 0;
 }
 
+
+.product-box {
+  width: 100%;
+
+}
+
+.picture-product {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+ 
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer-social {
@@ -1023,24 +1067,6 @@ sup {
 
 }  
 
-@media(max-width: 640px) and (orientation: portrait) {
-  .trend {
-    width: 100%;
-  }
-
-  .trend:nth-child(n + 2) {
-    margin-top: 3px;
-    margin-left: 15;
-  }
-}
-
-@media(max-width: 640px) and (orientation: landscape) {
-  .trend {
-    width: 50%;
-  }
-
-
-}
 
  
 
@@ -1051,6 +1077,7 @@ sup {
   }
 
   .menu-button {
+    align-self: flex-end;
     display: block;
     width: 2.3rem;
     padding-top: 2rem;
