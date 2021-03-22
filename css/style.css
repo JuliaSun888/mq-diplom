@@ -560,10 +560,6 @@ sup {
   width: 33%;
 }
 
-.product-handmade:nth-child(n+2) {
-  margin-left: 65px;
-}
-
 .product-handmade:last-child {
   margin-top: 0;
 }
@@ -572,7 +568,7 @@ sup {
   margin-right: auto;
   margin-left: auto;
   padding-left: 22px;
-  padding-right: 22px;
+  padding-right: 60px;
   max-width: 100%;
   display: block;
   height: auto;
@@ -770,10 +766,6 @@ sup {
   height: 100%;
 }
 
-.content-teg {
-  padding: 0;
-}
-
 /*Основной контент*/
 .container {
   display: flex;
@@ -787,7 +779,6 @@ sup {
 .news {
   width: 56%;
   max-width: 395px;
-  margin-left: 35px;
 }
 
 .themes {
@@ -807,6 +798,10 @@ sup {
   margin-bottom: 45px;
 }
 
+.themes:last-child::after {
+  display: none;
+}
+
 .themes:nth-child(n + 2) {
   margin-top: 65px;
 }
@@ -824,6 +819,8 @@ sup {
 .last-posts {
   width: 39%;
   max-width: 270px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .new-posts {
@@ -833,33 +830,30 @@ sup {
 /*Наши изделия*/
 .handmade {
   width: 100%;
+  padding-top: 0;
 }
 
 .images-handmade {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
- 
 }
 
 .product-handmade {
-  width: calc(50%-30px);
+  width: calc(50% - 15px);
+ 
 }
+
 .product-handmade:last-child {
   margin-top: 30px;
 }
 
-/*.product-handmade:nth-child(odd) {
-  margin-right: 25px;
-}*/
-
 .product-box {
-  margin-right: auto;
-  margin-left: auto;
+  width: 330px;
 }
 
 .footer-social {
-  width: 695px;
+  width: 100%;
 }
 
 }
@@ -868,7 +862,6 @@ sup {
 @media(min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .trend {
     width: calc((100% - 5px) / 2);
-    
   }
   
   .trend:nth-child(2n) {
@@ -886,6 +879,11 @@ sup {
     margin-right: 0;
   }
 
+  .picture-product {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   }
 
 
@@ -900,15 +898,10 @@ sup {
     flex-wrap: nowrap;
   }
 
-  .product-handmade {
-    margin-right: auto;
-    margin-left: 90px;
-    width: calc(50% - 90px);
-  }
-
   .picture-trend {
     width: 100%;
   }
+
     
   }
 
@@ -924,14 +917,25 @@ sup {
 
 .header-logo {
   order: 5;
-  margin-top: 200px;
+  margin-top: 235px;
   height: 90px;
   max-width: 100%;
 }
 
+.welcome {
+  width: 85%;
+  
+  padding-bottom: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+
 .welcome-title {
-  padding-top: 50px;
- 
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 26px;
+  line-height: 36px;
 }
 
   .trend:nth-child(n + 2) {
@@ -958,8 +962,6 @@ sup {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-   
-    
   }
 
   .tegs {
@@ -968,7 +970,7 @@ sup {
   }
 
   .content-teg {
-    padding: 0;
+    padding: 20px 25px 20px 30px;
   }
 
   .card-info {
@@ -993,6 +995,14 @@ sup {
   margin-bottom: 36px;
 }
 
+.themes:last-child::after {
+  display: none;
+}
+
+.picture {
+  margin-right: 0;
+}
+
 .news {
   width: 100%;
   display: flex;
@@ -1003,7 +1013,7 @@ sup {
 
 .last-posts {
   width: 100%;
-  max-width: 330px;
+  max-width: initial;
   display: flex;
   flex-wrap: wrap;
   margin-left: 15px;
@@ -1022,15 +1032,15 @@ sup {
 /*Наши изделия*/
 .handmade {
   width: 100%;
-  
   max-width: 330px;
-  padding-left: 0;
-  padding-right: 0;
+  
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .product-handmade {
   width: 100%;
-     
+  
   margin-bottom: 30px;
 }
 
@@ -1039,23 +1049,28 @@ sup {
   margin-left: 0;
 }
 
-
+  
 .product-box {
-  width: 100%;
+  width: 326px;
 
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .picture-product {
   padding-left: 0;
   padding-right: 0;
+  
+  width: calc(100% - 35px);
 }
 
+
+
 .images-handmade {
+  width: 326px;
   display: flex;
   flex-wrap: wrap;
- 
-  padding-left: 15px;
-  padding-right: 15px;
+  
 }
 
 .footer-social {
