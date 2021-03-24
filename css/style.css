@@ -902,7 +902,20 @@ sup {
     width: 100%;
   }
 
-    
+  .picture-product {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .product-handmade {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .product-handmade:last-child {
+    margin-top: 0;
+  }
+  
   }
 
   /*Мобильники*/
@@ -1028,20 +1041,23 @@ sup {
   margin-bottom: 25px;
 }
 
+.e-mail-box {
+  width: 100%;
+}
 
 /*Наши изделия*/
 .handmade {
   width: 100%;
-  max-width: 330px;
-  
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }
 
 .product-handmade {
-  width: 100%;
-  
-  margin-bottom: 30px;
+  position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 15px 20px 15px; 
 }
 
   
@@ -1049,12 +1065,13 @@ sup {
   margin-left: 0;
 }
 
+.text-title-handmade {
+  margin-top: 0;
+}
   
 .product-box {
-  width: 326px;
+  width: 100%;
 
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .picture-product {
@@ -1064,7 +1081,9 @@ sup {
   width: calc(100% - 35px);
 }
 
-
+.form-row {
+  width: 100%;
+}
 
 .images-handmade {
   width: 326px;
@@ -1080,7 +1099,22 @@ sup {
 }  
 
 
+@media(max-width: 640px) and (orientation: landscape) {
+  .handmade {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .images-handmade {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
  
+}
 
 /*Бургер-меню*/
 @media(max-width: 1199px) {
