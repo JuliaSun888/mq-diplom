@@ -1,4 +1,4 @@
-div<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -650,7 +650,7 @@ div<!DOCTYPE html>
       </div>
     </section>
 
-
+<!--Попап-->
     <div class="popup-wrapper">
       <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
       <div class="popup">
@@ -668,8 +668,14 @@ div<!DOCTYPE html>
         Как часто Вы заходите на сайт?
       </span>
     
-      <input type="text" class="field-popup" placeholder="Почти каждый день" required="">
-    
+      <select type="text" class="field-popup" placeholder="Почти каждый день" required=""> 
+        
+        <option value="day" selected="">Раз в несколько дней</option>
+        <option value="week" selected="">Раз в несколько недель</option>
+        <option value="year" selected="">Несколько раз в год</option>
+        <option value="day" selected=""></option>
+        </select>
+
       </label>
     
       <div class="form-popup">
@@ -693,7 +699,8 @@ div<!DOCTYPE html>
   <span class="popup-question">
     Расскажите, какой контент вы хотели бы видеть на нашем сайте?
   </span>
-  <input type="text" class="field-popup-big" placeholder="Может, больше рецептов?" required="">
+  <textarea type="text" class="field-popup-big" placeholder="Может, больше рецептов?" required="">
+    </textarea>
 
   <button class="button-popup">Отправить</button>
 
