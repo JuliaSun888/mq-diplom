@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@JuliaSun888 
+JuliaSun888
+/
+mq-diplom
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+mq-diplom/css/style.css
+@JuliaSun888
+JuliaSun888 Add files via upload
+Latest commit 87c47bc 5 days ago
+ History
+ 1 contributor
+1402 lines (1169 sloc)  21.6 KB
+  
 * {
   margin: 0;
   padding: 0;
@@ -921,7 +952,7 @@ sup {
   /*Мобильники*/
   @media(max-width: 640px) {
     .popup {
-      max-width: 320px;
+      max-width: 100%;
     }
 
     .popup-full {
@@ -935,7 +966,6 @@ sup {
       margin-right: 0;
       padding-right: 0;
     }
-
     .popup-full {
       padding-left: 0;
       padding-right: 0;
@@ -1400,3 +1430,4 @@ sup {
   opacity: 1;
   display: block;
 }
+
