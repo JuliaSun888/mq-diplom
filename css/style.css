@@ -938,7 +938,7 @@ sup {
     }
     .popup {
       position: relative;
-      max-width: 100%;
+      width: 100%;
       /* opacity: 0; */
       margin: auto;
     }
@@ -949,25 +949,7 @@ sup {
       -moz-box-sizing: border-box;
       /* box-sizing: border-box; */
     }
-    /*.popup {
-      max-width: 100%;
-    }
-
-    .popup-full {
-      max-width: 320px;
-      padding-left: 0;
-      padding-right: 0;
-    }*/
-    /*.popup {
-      width: 100%;
-      height: 100%;
-      margin-right: 0;
-      padding-right: 0;
-    }
-    .popup-full {
-      padding-left: 0;
-      padding-right: 0;
-    }*/
+    
 
   .header {
     background-image: url(../images/banner-mobile.jpg);
