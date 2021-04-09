@@ -921,14 +921,14 @@ sup {
   /*Мобильники*/
   @media(max-width: 640px) {
     .popup-wrapper {
-     /* position: fixed;*/
+      position: fixed;
       top: 0;
       left: 0;
       z-index: 9999999;
       display: flex;
       box-sizing: border-box;
       width: 100%;
-      height: 100%;
+    
       padding-top: 50px;
       padding-bottom: 50px;
       background-color: rgba(0, 0, 0, 0.6);
@@ -938,7 +938,6 @@ sup {
     .popup {
       position: relative;
       width: 100%;
-      /* opacity: 0; */
       margin: auto;
     }
     .popup-content {
@@ -1233,19 +1232,15 @@ sup {
 }
 
 .popup-content {
-  width: 390px;
-  height: 595px;
+  width: 95%;
+  max-width: 390px;
   position: absolute;
   z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 20px;
-  -moz-box-sizing: border-box;
+  /*-moz-box-sizing: border-box;*/
   box-sizing: border-box;
 }
 
@@ -1407,5 +1402,7 @@ sup {
 
 .popup-checkbox:checked + .popup {
   opacity: 1;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
